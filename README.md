@@ -99,11 +99,11 @@ Python 3.12, PyTorch, NumPy, scikit-learn, LightGBM, matplotlib.
 ## Citation
 
 ```bibtex
-@article{TODO,
+@article{
   title   = {A Zero-Inflated Negative-Binomial Transformer for Forecasting
              Irregular, Human-Read Electricity-Meter Consumption},
-  author  = {TODO},
-  journal = {TODO},
+  author  = {Rohollah Yousefpour},
+  journal = {Department of Computer Sinces, University of Mazanfaran},
   year    = {2026}
 }
 ```
