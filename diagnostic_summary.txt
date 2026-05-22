@@ -1,0 +1,64 @@
+COHORT
+  meters         : 192,446
+  total readings : 9,066,272
+  per meter      : median 54, mean 47.1, max 59
+
+OUTLIERS (utility data errors)
+  gap > 180 days :       99,150 (1.094% of readings)
+  gap > 365 days :       34,107 (0.376% of readings)
+  gap > 1000 days:        4,724 (0.052% of readings)
+  max gap        : 10,357 days (=28.4 years — physically impossible)
+  max consumption: 998,855 kWh
+  max daily-rate : 10,192 kWh/day
+
+=== GAP (days) — all readings ===
+    p0.1:         14.000
+      p1:         35.000
+      p5:         46.000
+     p25:         51.000
+     p50:         56.000
+     p75:         64.000
+     p95:        104.000
+     p99:        193.000
+   p99.9:        694.000
+
+=== GAP (days) — gap ≤ 365 only ===
+    p0.1:         14.000
+      p1:         35.000
+      p5:         46.000
+     p25:         51.000
+     p50:         55.000
+     p75:         64.000
+     p95:        104.000
+     p99:        156.000
+   p99.9:        348.000
+
+=== CONSUMPTION (kWh) — gap ≤ 365 ===
+    p0.1:          0.000
+      p1:          0.000
+      p5:          0.000
+     p25:         89.000
+     p50:        274.000
+     p75:        504.000
+     p95:      1,220.000
+     p99:      2,769.000
+   p99.9:      8,871.000
+
+=== DAILY RATE (kWh/day) — gap ≤ 365 ===
+    p0.1:          0.000
+      p1:          0.000
+      p5:          0.000
+     p25:          1.500
+     p50:          4.604
+     p75:          8.180
+     p95:         19.911
+     p99:         44.286
+   p99.9:        141.977
+
+ZERO-INFLATION
+  zero rate (all readings)        : 11.378%
+  zero rate (after gap filter)    : 11.359%
+
+OVERDISPERSION
+  dispersion index (all)          : 2150.5
+  dispersion index (gap ≤ 365)    : 1807.6

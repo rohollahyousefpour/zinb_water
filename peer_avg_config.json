@@ -1,0 +1,41 @@
+{
+  "version": "5b",
+  "k_shrink": 2,
+  "l1_period": "Q",
+  "global_mean_rate": 6.742740676894097,
+  "physical_rate_max": 2000.0,
+  "min_tariff_count": 200,
+  "n_rare_tariffs_bucketed": 99,
+  "rare_tariff_label": "__OTHER__",
+  "split_seed": 42,
+  "n_train_meters": 153976,
+  "n_val_meters": 19247,
+  "n_test_meters": 19247,
+  "train_target_percentiles": {
+    "p50": 274.0,
+    "p90": 862.0,
+    "p95": 1233.0,
+    "p99": 2859.0,
+    "p99.5": 4171.0,
+    "p99.9": 9631.002000000328,
+    "p100": 177676.0
+  },
+  "n_value_features": 5,
+  "value_feature_names": [
+    "rate",
+    "dt",
+    "peer_avg",
+    "sin_doy",
+    "cos_doy"
+  ],
+  "glm_ridge_lambda": 1.0,
+  "glm_feature_names": [
+    "const",
+    "lag1",
+    "ema",
+    "peer_avg",
+    "sin_doy",
+    "cos_doy"
+  ],
+  "glm_n_tariffs": 14
+}

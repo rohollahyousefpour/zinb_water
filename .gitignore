@@ -1,0 +1,51 @@
+# ============================================================
+#  .gitignore for the ZINB electricity-meter forecasting repo
+# ============================================================
+
+# ----- Real meter data (PROPRIETARY — never commit) -----
+*.npz
+*.pkl
+data_split.pt
+meters_electricity_*.npz
+split_*.npz
+xfmr_test_pred.npz
+
+# ----- Model checkpoints (large, regenerable) -----
+checkpoints_*/
+*.pt
+*.pth
+*.ckpt
+
+# ----- Run outputs (regenerable; selectively add summaries if wanted) -----
+results_*/
+eda_figures/
+paper_figs/
+
+# ----- Python / environment -----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ----- IDE / OS -----
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ----- LaTeX build artifacts (if you keep the paper in the repo) -----
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# ----- Allow-list: force-include small config files even though
+#       similar extensions may be ignored above -----
+!static_cardinalities_ramz.json
+!tariff_code_to_index.json
+!peer_avg_config.json
